@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFix</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="tabs">
+        <button id="profile-tab" class="active">Profile</button>
+        <button id="settings-tab">Settings</button>
+    </div>
+
+    <div id="profile-content" class="tab-content">
+        <h2>User Profile</h2>
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" placeholder="Enter your first name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" placeholder="Enter your last name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="address">Street Address (Address Line 1):</label>
+        <input type="text" id="address" placeholder="Enter your street address">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="Enter your city">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" placeholder="Enter your state (e.g., WA, CA)">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" placeholder="Enter your country (e.g., United States)">
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" placeholder="Enter your ZIP Code">
+
+        <button id="save-profile">Save Profile</button>
+    </div>
+
+    <div id="settings-content" class="tab-content hidden">
+        <h2>Settings</h2>
+        <p>Settings options will go here.</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
